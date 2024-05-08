@@ -1,0 +1,38 @@
+h1{
+    font-size: 50px;
+    text-align: center;
+}
+
+.add-initial{
+    font-size: 30px;
+    background-color: white;
+    margin-bottom: 20px;  /* temporary*/
+    border-radius: 5px;
+    padding: 5px 8px; 
+}
+
+.add-div{
+    width: 300px;
+    height: 300px;
+    border: solid black 4px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 20px 0px;
+}
+
+.add-div p{
+    font-size: 70px; 
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.insert-name{
+    padding: 5px 20px;
+    
+}
+.insert-name::placeholder{
+    font-size: 25px;
+}

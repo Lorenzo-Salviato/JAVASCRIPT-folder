@@ -1,4 +1,4 @@
-let workoutsList = ['Forearms','Biceps', 'Back day']
+let workoutsList = JSON.parse(localStorage.getItem('workoutsList')) || ['Forearms','Biceps', 'Back', 'Chest']
  
 const workoutDiv = document.querySelector('.workout-1-div')
 const secondWorkoutDiv = document.querySelector('.second-workout-div')
@@ -23,6 +23,7 @@ const workoutsGenerator = ()=>{
     if(workoutsList.length >= 4){
         document.documentElement.style.height = 'auto';
     }
+    localStorage.setItem('workoutsList', JSON.stringify(workoutsList));
 }
 workoutsGenerator()
 
@@ -31,9 +32,9 @@ const changeOrder = () => {
         const firstElement = workoutsList.shift(); // remove 1st value
         workoutsList.push(firstElement);    //push it to the end 
     }
-    console.log(workoutsList);
     workoutsGenerator();
-    editWorkoutGenerator()
+    editWorkoutGenerator();
+    localStorage.setItem('workoutsList', JSON.stringify(workoutsList));
 }
 
 document.querySelector('.done-button-workout').addEventListener('click', ()=> changeOrder())
@@ -76,6 +77,7 @@ const workoutChange = (num)=>{
     } else{
         console.log('ERROR')
     }
+    localStorage.setItem('workoutsList', JSON.stringify(workoutsList))
 }
 
 document.querySelector('.edit-done-1').addEventListener('click', ()=> workoutChange(1))
@@ -112,10 +114,6 @@ document.querySelector('.edit-input-8').addEventListener('keydown', event =>{
 })
 
 
-
-
-
-
 // ADD FUNCTION
 const addButton = document.querySelector('.add-button');
 const inputAdd = document.querySelector('.add-input');
@@ -130,6 +128,7 @@ const addWorkout = ()=> {
     }else{
         console.log('please enter a valid workout name')
     }
+    localStorage.setItem('workoutsList', JSON.stringify(workoutsList))
 }
 addButton.addEventListener('click', ()=>addWorkout());
 inputAdd.addEventListener('keydown', (event)=>{
