@@ -1,0 +1,407 @@
+body{
+padding: 20px 0px 20px 20px;
+}
+p button {
+  border-radius: 0px; 
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4); 
+  border-style: solid; 
+  border-width: 1.5px; 
+  border-color: black; 
+  font-size: 20px;
+  margin-left: 5px;
+  background-color: #18cc4b;
+  font-weight: bold;
+  font-family: arial; 
+  
+  
+}
+
+.date-displayed{
+	position: fixed; 
+	top: 18px; 
+	right: 28px; 
+	font-size: 20px; 
+	background-color:rgb(21, 154, 255); 
+	border: solid red 3px; 
+	padding: 9px 17px; 
+	font-weight: bold; 
+	box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); 
+}
+
+.calculator-operators {
+	background-color: #26a7fc; 
+}
+
+.shopping-free-shipping placeholder {
+font-family: arial; 
+color: #858483;
+}
+
+.shopping-free-shipping {
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	border-color: rgb(139, 140, 139);
+	border-style: solid;
+	padding-left: 12px; 
+	border-radius: 2px; 
+	border-width: 1px; 
+	font-size: 15px; 
+	width: 200px; 
+	font-family: arial; 
+	vertical-align: center;
+}
+
+.red-error {
+	color: red; 
+	text-decoration: red wavy underline;
+}
+
+.button-subscribe {
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: black; 
+	color: white; 
+	border-radius: 20px; 
+	border: 1px solid black; 
+	cursor: pointer; 
+	padding: 5px 10px; 
+	font-weight: bold;
+	font-family: arial;
+	font-size: 16px;
+}
+
+.result-calculator-div {
+	display: inline-block; 
+	margin-bottom: 50px
+}
+
+.result-calculator-text {
+	display: inline-block;
+	font-family: arial; 
+	font-weight: bold;
+	text-decoration: underline
+}
+
+.result-calculator-button{
+	display: flex; 
+	min-width: 80px; 
+	height: 30px; 
+	background-color: #e0e0e0;
+	border: 1.5px solid gray; 
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4); 
+	font-family: arial; 
+	align-items: center; 
+	justify-content: start; 
+	padding-right: 10px;
+}
+
+.calculate-button-shipping {
+	vertical-align: bottom; 
+	cursor: pointer; 
+	font-size: 15px; 
+	margin-left: 4px; 
+	padding: 10px 17px; 
+	border-radius: 0px; 
+	border: none; 
+	background-color: green; 
+	color: white;
+}
+
+
+.subscribed-class {
+	background-color: rgb(240, 240, 240); 
+	color: black; 
+	border: none;
+	font-family: arial;
+	font-size: 16px;
+}
+
+.result-name {
+	margin-bottom: 75px; 
+}
+
+.js-button-only-one-on-1{
+	margin-right: 15px; 
+	margin-left: 10px;
+	margin-bottom: 40px
+}
+
+.js-button-only-one-on-2{
+	margin-right: 15px; 
+	margin-left: 10px; 
+	margin-bottom: 40px
+}
+
+.js-button-only-one-on-3{
+	margin-right: 15px; 
+	margin-left: 10px; 
+	margin-bottom: 40px
+}
+
+.js-button-activated{
+	background-color: red; 
+	color: white; 
+	border: solid red; 
+	margin-right: 15px; 
+	margin-left: 10px; 
+}
+
+.input-Todo-List-1 {
+	margin-bottom: 50px;
+}
+
+.strings-couleur {
+	color: rgba(255, 136, 0, 0.87); 
+	background-color: rgba(255, 136, 0, 0.87);
+	border: none;
+}
+
+.variables-couleur {
+	color: rgb(21, 154, 255); 
+	background-color: rgb(21, 154, 255);
+	border: none;
+}
+
+.numbers-couleur {
+	color: rgb(35, 16, 202); 
+	background-color: rgb(35, 16, 202); 
+	border: none;
+}
+
+.functions-couleur {
+	color: rgba(37, 115, 56, 0.952); 
+	background-color: rgba(37, 115, 56, 0.952); 
+	border: none;
+}
+
+.other-couleur {
+	color: black;
+	background-color: black;	
+	border: none;
+}
+
+.result-couleur {
+	color: purple; 
+	background-color: purple; 
+	border: none;
+}
+
+.arrays-content-couleur {
+	color: rgba(58, 255, 107, 0.952); 
+	background-color: rgba(58, 255, 107, 0.952); 
+	border: none;
+}
+
+.loops-couleur {
+	color: rgb(250, 128, 149); 
+	background-color: rgb(250, 128, 149);
+	border: none;
+}
+
+.calculate-addOne-js {
+	margin-top: 20px;
+}
+
+
+.js-input-diviseurs {
+	padding: 7px 14px; 
+	background-color: #f7f3f0;
+	font-family: arial;
+	font-size: 15px; 
+	border: 1px solid rgba(0, 0, 0, 0.4); 
+	border-radius: 15px;
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.6);
+}
+
+.grid-diviseurs {
+	display: grid; 
+	grid-template-columns: 169px 119px;
+	margin-top: 60px;
+	column-gap: 10px;
+}
+
+.trouver-diviseurs {
+	border-radius: 10px;
+	border: none; 
+	background-color: purple; 
+	color: white;
+	cursor: pointer; 
+	
+}
+
+
+.finish-button {
+	margin-top: 60px; 
+	
+}
+
+.not-added-text{
+	margin-top: 46px;
+	opacity: 0; 
+	color: rgb(11, 185, 11); 
+	font-family: arial; 
+	font-weight: bold;
+	margin-left: 4px;
+	transition: opacity 0.2s;
+}
+
+.added-text{
+	margin-top: 46px;
+	opacity: 1;
+}
+
+.add-button-exercise {
+	color: white; 
+	font-weight: bold; 
+	padding: 10px 15px;
+	font-size: 15px; 
+	border-radius: 17px; 
+	background-color: rgb(215, 215, 15);
+	border: none;
+	cursor: pointer;
+	margin-bottom: 30px;
+}
+
+.add-button-exercise:active {
+	background-color: rgb(209, 209, 21);;
+}
+
+.generate-HTML-div{
+	margin-top: 40px;
+}
+
+.product-price{
+	font-weight: bold; 
+	display: inline-block;
+	margin-left: 7px
+}
+
+.product-color{
+	display: inline-block; 
+	margin-left: 12px;
+}
+
+.color-button{
+	width: 4px;
+	height: 4px;
+	border: solid 1px;
+	border-radius: 2px
+}
+.black-product{
+	background-color: black;
+}
+
+.white-product{
+	background-color: white;
+}
+
+.go-to-diviseurs{
+  font-weight: bold;
+  font-size: 23px; 
+  color: rgb(160, 13, 13); 
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.quantity-update {
+	margin-top: 40px;
+	display: inline-block; 
+	font-size: 17px;
+}
+
+.update-p{
+	display: inline-block;
+
+}
+.update-quantity {
+	display: inline-block; 
+	color:rgb(14, 153, 234);
+	cursor: pointer; 
+	margin-left: 12px;
+	font-size: 17px;
+	display: initial;
+}
+.update-quantity:hover{
+	color: rgba(234, 139, 14, 0.836);
+}
+
+.quantity-input{
+	width: 30px; 
+	display: none
+}
+
+.save-quantity-link{
+	display: none;
+	color:rgb(14, 153, 234);
+	cursor: pointer; 
+	margin-left: 6px;
+}
+
+.save-quantity-link:hover {
+	color: rgba(234, 139, 14, 0.836);
+}
+
+.is-editing-quantity .update-quantity{
+	display: none
+}
+
+.is-editing-quantity .quantity-input{
+	display: initial; 
+	margin-left: 12px;
+}
+
+.is-editing-quantity .save-quantity-link{
+	display: initial;
+}
+
+.input-minutes-timer{
+	width: 75px;
+	padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+.name-timer{
+	width: 105px;
+	padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.add-timer{
+	padding: 10px 16px;
+  font-size: 16px;
+  background-color: #007bff; /* Blue color, you can change this */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	font-weight: bold;	
+}
+
+.add-timer:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.add-timer:active {
+  background-color: #529ae6; /* Green on click */
+}
+
+.select-minutes-timer {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  width: 100px; /* Adjust the width as needed */
+  background-color: #fff; /* Background color for the dropdown */
+  color: #333; /* Text color */
+  cursor: pointer;
+}
+
+.select-minutes-timer:hover {
+  background-color: #f0f0f0; /* Lighter background color on hover */
+}

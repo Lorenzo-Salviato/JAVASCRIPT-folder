@@ -1,0 +1,238 @@
+*{
+    background-color: transparent;
+}
+
+html{
+    height: 100%;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+  
+body{
+    font-family: "DM Sans", sans-serif; 
+    background: linear-gradient(to bottom, rgb(45, 11, 0), rgb(67, 16, 1));
+    padding: 0;
+    height: 100%;
+    margin: 1px;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+    font-family: "DM Sans", sans-serif; 
+    text-transform: uppercase; 
+    margin-bottom: 5rem;
+    color: rgb(241, 65, 1);
+    text-shadow: 2px 0px 10px rgb(241, 65, 1)
+}
+.doc-grid{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 100px;
+    height: 100%;
+}
+
+@media(min-width: 1167px){
+    .doc-grid{
+        width: 95%;
+        margin-left: 30px; 
+    }
+
+}
+
+@media(max-width:1165px){
+    .doc-grid{
+        width: 100%;
+        justify-content: center;
+    }
+    .all-workouts{
+        margin-bottom: 40px;
+    }
+}
+@media(max-width:1107px){
+    html{
+        height:auto;
+    }
+}
+
+.all-workouts{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 30px;
+    padding: 0;
+    border: solid rgb(241, 65, 1) 8px;
+    border-radius: 39px;
+}
+
+
+.workout-1-div, .second-workout-div{
+    margin: 0px;
+    background-color: rgb(243, 243, 243);     
+}
+
+.workout-1-div{
+    padding: 20px 20px 5px 20px;
+    border-radius: 30px 30px 0px 0px;
+    display: block;
+}
+
+
+.second-workout-div{
+    padding: 1px;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.workout-1{
+    border: solid black 3px;
+    box-shadow: 1px 1px 8px black; 
+    border-radius: 10px;
+    background-color: rgba(0, 106, 255, 0.767);
+    padding-top: 20px;
+    padding-bottom: 20px; 
+    display: flex;
+    justify-content: space-around;
+    padding-right: 2px;
+    align-items: center;
+    width: 450px; 
+    margin-bottom: 20px; 
+}
+.workout-1-text{
+    font-size: 28px; 
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 5px 5px;
+}
+
+.workout-2, .workout-3, .workout-4, .workout-5, .workout-6, .workout-7, .workout-8{
+    border: solid rgba(0, 106, 255, 0.767) 5px; 
+    border-radius: 5px;
+    background-color: rgb(243, 243, 243);
+    /*font-family: arial, sans-serif;*/
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px; 
+    display: block;
+    width: 350px;
+    margin-top: 20px; 
+    margin: 20px auto; 
+}
+.workout-2-text, .workout-3-text, .workout-4-text, .workout-5-text, .workout-6-text, .workout-7-text, .workout-8-text{
+    font-size: 25px; 
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.done-button-div{
+    height: 100%;
+    align-items: center; 
+    display: flex;
+    justify-content: center; 
+}
+
+.done {
+    font-size: 27px;
+    font-weight: bold;
+    border: solid black 4px; 
+    border-radius: 5px;
+    background-color: rgb(241, 65, 1) ;
+    color: black;
+    cursor: pointer;
+}
+
+.edit-div{
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.edit-add,
+.edit-1,
+.edit-2,
+.edit-3,
+.edit-4,
+.edit-5,
+.edit-6,
+.edit-7,
+.edit-8{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin-top: 10px; 
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(243, 243, 243);
+    border: solid rgba(0, 106, 255, 0.767) 5px;
+    width: 450px;
+}
+.edit-add{
+    margin-top: 0;
+    margin-bottom: 0;
+    height: 92px;
+    width: 100%;
+    background-color: rgba(0, 106, 255, 0.767);
+    border: solid rgb(241, 65, 1) 6px;
+    box-sizing: border-box;
+}
+.white-div{
+    background-color: rgb(165, 165, 165);
+    margin-top: 28px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.editing-divs{
+    display: none; 
+}
+
+.edit-text{
+    font-size: 30px;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-align: center;
+    display: inline-block;
+    width: 80px; 
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+.edit-text-add{
+    font-size: 50px;
+    font-weight: 600;
+}
+.edit-input{
+    border: solid rgb(53, 2, 2) 2px; 
+    border-radius: 5px;
+    height: 41.33px;
+    width: 200px;
+    box-sizing: border-box;
+    outline: none;
+    border: solid black 3px;
+    padding-left: 4px;
+    font-size: 16px;
+}
+
+.edit-input::placeholder{
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.8); 
+
+}
+.add-input{
+    background-color: rgb(243, 243, 243);
+}
+.edit-input-add::placeholder{
+    color:rgba(0, 0, 0, 0.7)
+}
+
+.display-initial {
+    display: flex;
+}
+
+

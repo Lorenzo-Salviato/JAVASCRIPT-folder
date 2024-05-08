@@ -1,0 +1,140 @@
+body{
+padding: 20px 0px 20px 20px;
+}
+p button {
+  border-radius: 0px; 
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4); 
+  border-style: solid; 
+  border-width: 1.5px; 
+  border-color: black; 
+  font-size: 20px;
+  margin-left: 5px;
+  background-color: #18cc4b;
+  font-weight: bold;
+  font-family: arial; 
+  
+  
+}
+
+.calculator-operators {
+	background-color: #26a7fc; 
+}
+
+.shopping-free-shipping placeholder {
+font-family: arial; 
+color: #858483;
+}
+
+.shopping-free-shipping {
+	padding-top: 10px;
+	padding-bottom: 10px; 
+	border-color: rgb(139, 140, 139);
+	border-style: solid;
+	padding-left: 12px; 
+	border-radius: 2px; 
+	border-width: 1px; 
+	font-size: 15px; 
+	width: 200px; 
+	font-family: arial; 
+	vertical-align: center;
+}
+
+.red-error {
+	color: red; 
+	text-decoration: red wavy underline;
+}
+
+.button-subscribe {
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	background-color: black; 
+	color: white; 
+	border-radius: 20px; 
+	border: 1px solid black; 
+	cursor: pointer; 
+	padding: 5px 10px; 
+	font-weight: bold;
+	font-family: arial;
+	font-size: 16px;
+}
+
+.result-calculator-div {
+	display: inline-block; 
+	margin-bottom: 50px
+}
+
+.result-calculator-text {
+	display: inline-block;
+	font-family: arial; 
+	font-weight: bold;
+	text-decoration: underline
+}
+
+.result-calculator-button{
+	display: flex; 
+	min-width: 80px; 
+	height: 30px; 
+	background-color: #e0e0e0;
+	border: 1.5px solid gray; 
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4); 
+	font-family: arial; 
+	align-items: center; 
+	justify-content: start; 
+	padding-right: 6px;
+}
+
+.calculate-button-shipping {
+	vertical-align: bottom; 
+	cursor: pointer; 
+	font-size: 15px; 
+	margin-left: 4px; 
+	padding: 10px 17px; 
+	border-radius: 0px; 
+	border: none; 
+	background-color: green; 
+	color: white;
+}
+
+
+.subscribed-class {
+	background-color: rgb(240, 240, 240); 
+	color: black; 
+	border: none;
+	font-family: arial;
+	font-size: 16px;
+}
+
+.name-submit {
+
+}
+
+.result-name {
+	margin-bottom: 75px; 
+}
+
+.js-button-only-one-on-1{
+	margin-right: 15px; 
+	margin-left: 10px;
+	margin-bottom: 40px
+}
+
+.js-button-only-one-on-2{
+	margin-right: 15px; 
+	margin-left: 10px; 
+	margin-bottom: 40px
+}
+
+.js-button-only-one-on-3{
+	margin-right: 15px; 
+	margin-left: 10px; 
+	margin-bottom: 40px
+}
+
+.js-button-activated{
+	background-color: red; 
+	color: white; 
+	border-color: red; 
+	margin-right: 15px; 
+	margin-left: 10px; 
+}

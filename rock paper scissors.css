@@ -1,0 +1,77 @@
+body{
+    font-family: arial; 
+    /*background-color: rgb(249, 249, 238);*/
+
+    
+}
+
+.results-grid {
+    display: flex; 
+    justify-content: space-around;
+}
+.player-move, .bot-move, .result, .player-span, .bot-span{
+    font-size: 30px;
+    display: inline-block;
+    text-align: center;
+}
+
+.player-span, .bot-span, .result{
+    font-weight: bold;
+}
+
+.moves-grid{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+
+.paper-button, .rock-button, .scissors-button, .start-countdown{
+    /*background-color: rgb(241, 239, 239);*/
+    background-color: white;  
+    font-weight: bold;
+    padding: 10px 15px;
+    font-size: 32px;
+    border: solid 3px red;
+    box-shadow: inset 0px 0px 7.5px rgba(0,0,0,0.25);
+    border-radius: 2px;
+}
+
+.start-countdown{
+    /*background-color: rgba(255, 0, 0, 0.78);
+    color: rgba(0,0,0,0.9);*/
+    border: solid 5px red;
+    font-size: 38px;
+    padding: 14px 29px;
+    border-radius: 40px;
+    box-shadow: inset 0px 0px 10.5px rgba(0,0,0,0.3);
+    margin-top: 60px;   /*FIX THIS : it even apllies to when the moves are displayed ! */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.margin-remove{
+    margin-top: 0px;
+}
+
+.countdown-text{
+    position: absolute; 
+    top: 30%;
+    display: inline-block;
+    font-weight: bold;
+    font-size: 65px;
+    color: rgb(33, 25, 183);
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 1000px; /* Need a specific value to work */
+    text-align: center;
+}
+
+.error-play{
+    color: rgb(204, 41, 41); 
+    text-decoration: underline;
+}

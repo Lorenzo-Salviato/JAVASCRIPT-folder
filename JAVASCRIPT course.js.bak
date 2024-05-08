@@ -1,0 +1,83 @@
+let cartQuantity = 0; 
+const age = 18; 
+age >= 18 ? console.log('You can drive !') : console.log("You can't drive !");
+
+let Calculation = localStorage.getItem('Calculation') || '';
+let lastNumber = '';
+
+function addNumber(elementCalculator) {
+  Calculation += elementCalculator;
+  console.log(Calculation);
+  document.querySelector('.js-result-calculator').innerHTML = Calculation;
+  localStorage.setItem('Calculation', Calculation);
+}
+
+function zeroAfterCancel() {
+  if (Calculation === '0') {
+    Calculation = '';
+  }
+  console.log(Calculation);
+  document.querySelector('.js-result-calculator').innerHTML = Calculation;
+  localStorage.setItem('Calculation', Calculation);
+}
+
+
+
+const subscribeButtonElement = document.querySelector('.js-button-subscribe'); 
+
+function subscribeButtonFunction() {
+if (subscribeButtonElement.innerHTML === 'Subscribe'){
+subscribeButtonElement.innerHTML = 'Subscribed !'; 
+subscribeButtonElement.classList.add('subscribed-class')
+} else {
+subscribeButtonElement.innerHTML = 'Subscribe';
+subscribeButtonElement.classList.remove('subscribed-class')
+}
+};
+
+function amazonShippingFunction () {
+if (document.querySelector('.shopping-free-shipping').value >= 40) {
+document.querySelector('.result-free-shipping').innerHTML = 'Free Shipping !' 
+} else {
+document.querySelector('.result-free-shipping').innerHTML = '10$ Shipping'
+};
+if(document.querySelector('.shopping-free-shipping').value <= 0) {
+document.querySelector('.result-free-shipping').innerHTML = "Error: the cost can't be under 0$"; 
+document.querySelector('.result-free-shipping').classList.add('red-error')
+} else {
+document.querySelector('.result-free-shipping').classList.remove('red-error')
+}
+}; 
+
+
+function nameFunction(){
+const nameUser = document.querySelector('.name-submit').value;
+document.querySelector('.result-name').innerHTML = `Your name is : ${nameUser}`;
+if (nameUser === 'Andrea' || nameUser === 'Andre') {
+document.querySelector('.result-name').innerHTML = "OMG that's the GOAT (dans le gay sens du terme)" 
+}; 
+if (nameUser === 'Lorenzo' || nameUser === 'Lore'){
+document.querySelector('.result-name').innerHTML = "Your name is Lore SOAT"
+}
+}; 
+
+function buttonActivationFunction1() {
+	document.querySelector('.js-button-only-one-on-1').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-2').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-2').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-1').classList.add('js-button-activated'); 
+}
+
+function buttonActivationFunction2() {
+	document.querySelector('.js-button-only-one-on-1').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-2').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-2').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-2').classList.add('js-button-activated'); 
+}
+
+function buttonActivationFunction3() {
+	document.querySelector('.js-button-only-one-on-1').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-2').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-2').classList.remove('js-button-activated'); 
+	document.querySelector('.js-button-only-one-on-3').classList.add('js-button-activated'); 
+}

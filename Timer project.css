@@ -1,0 +1,269 @@
+body{
+  font-family: arial;
+  background-color: #FF2400;
+}
+
+h1{
+  font-size: 30px; 
+  font-weight: bolder;
+  color: rgba(2, 2, 98, 0.824); 
+  text-align: center;
+  margin-bottom: 5px;
+  text-decoration: underline rgba(2, 2, 98, 0.824) 10px dotted;
+  text-underline-offset: 7px
+}
+
+.decorations{
+  display: flex; 
+  justify-content: space-around;
+  flex-direction: row;  
+  margin-top: 15px;
+  margin-left: -120px;
+  margin-right: -120px;
+}
+
+.decoration1, .decoration2, .decoration3, .decoration4 {
+  width: 55px; 
+  height: 5px; 
+  background-color: rgba(2, 2, 98, 0.824); 
+  color: transparent; 
+  border: none; 
+  margin-bottom: 40px; 
+}
+/*
+.decoration1 {
+  margin-left: 70px;
+}
+.decoration2 {
+  margin-left: 170px;
+}
+.decoration3 {
+  margin-left: 520px;
+}
+.decoration4 {
+  margin-left: 170px;
+}
+*/
+
+.white-background{
+  background-color: rgb(231, 230, 230);
+  padding-top: 35px;
+  padding-bottom: 35px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.red-background{
+  margin-top: 32px; 
+  margin-bottom: 32px;
+  height: 55px;
+  background-color: #FF2400;
+  color: transparent;
+}
+
+.div-add-new-timer{
+  background-color: #f72100; 
+  padding-top: 10px; 
+  padding-bottom: 10px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  width: 450px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.div-manually-activated{
+  width: 614px;
+}
+.select-minutes-timer {
+  display: flex;
+  padding: 5px 7px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: #fff; 
+  color: #333; 
+  cursor: pointer;
+}
+.select-minutes-timer:hover {
+  background-color: #f0f0f0; 
+}
+
+.display-manually {
+  border: none;
+  background-color:  rgba(2, 2, 98, 0.824);
+  color: white;
+  padding-top: 2px; 
+  padding-bottom: 2px;
+  font-weight: bold;
+  font-size: 15px;
+  margin-right: 10px; 
+  border-radius:3px
+}
+
+ .manually-timer{
+  width: 50px;
+	padding: 8px;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+  display: none;
+}
+
+.div-manually-activated .manually-timer {
+  display: initial;
+}
+
+.name-timer{
+	width: 155px;
+	padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}   
+
+
+.add-timer{
+	padding: 10px 16px;
+  font-size: 16px;
+  background-color: rgba(2, 2, 98, 0.824); /* Blue color, you can change this */
+  color: #fff; /* Text color */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	font-weight: bold;	
+}
+
+.add-timer:hover {
+  background-color: #0270e6; /* Darker blue on hover */
+}
+
+.add-timer:active {
+  background-color: #fdfdfd; 
+  color: rgba(2, 2, 98, 0.824);
+}
+
+.first-timer{
+  display: grid; 
+  grid-template-columns: 90px 1fr;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  padding-right: 0px; 
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 210px;
+  border-radius: 10px;
+}
+
+.one-timer-all .first-timer{
+  position: absolute; 
+  top: 1000px; 
+  left: 1400px; 
+  display: initial;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons-container{ 
+  background-color: /* #f72100 */ white ;
+  display: flex; 
+  flex-direction: column;
+  gap: 15px;
+  padding: 2px 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-right: solid rgba(2, 2, 98, 0.824) 2px;
+}
+
+.pause-timer, .restart-timer{ 
+  background-color: white;
+  height: 50px;
+  flex: 1;
+  border: none; 
+  cursor: pointer;
+}
+
+.restart-image{
+  height: 60px;
+}
+
+.PAUSE-timer{
+  height: 50px;
+}
+
+.image-play-pause {
+  height: 50px; 
+}
+
+.countdown {
+  display: block; 
+  color: white;
+  font-size: 50px;
+  text-align: center;
+  font-weight: bold; 
+  font-family: monospace;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.countdown-and-name {
+  background-color: #ee2102;
+  margin-right: 0px; 
+  border-radius: 10px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  display: grid; 
+  grid-template-rows: 150px 1fr;
+  row-gap: 0px;
+  cursor: default;
+}
+
+.name-timer-displayed{
+  padding: 7px 13px;
+  font-size: 15px;
+  background-color: whitesmoke;
+  color: rgba(2, 2, 98, 0.824); 
+  border: solid rgba(2, 2, 98, 0.824);
+  border-radius: 4px;
+  cursor: pointer;
+	font-weight: bold;	
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+.div-name-displayed{
+  background-color: white; 
+  border-bottom-right-radius: 10px;
+  display: grid; 
+  align-items: center;
+  border-top: solid rgba(2, 2, 98, 0.824) 2px;
+}
+
+.delete-timer {
+  padding: 10px 16px;
+  font-size: 16px;
+  background-color: rgba(2, 2, 98, 0.824); 
+  color: #fff; 
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+	font-weight: bold;	
+
+}
+
+.timers-div {
+  font-family: arial;
+}
+
+
+
+
+
+/*border-radius: 55px;
+  padding: 5px 10px;
+  border: solid rgba(2, 2, 98, 0.824) 3px;*/

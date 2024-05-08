@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="Timer project.css">
+<title>Multiple Timers</title>
+
+
+</head>
+<body>
+<h1>Multiple timers</h1>
+<div class="decorations">
+  <button class="decoration1">rooor</button>
+  <button class="decoration2">rooor</button>
+  <button class="decoration3">rooor</button>
+  <button class="decoration4">rooor</button>
+</div>
+
+
+<div class="white-background">
+ <div class="div-add-new-timer">
+  <select class="select-minutes-timer" style="margin-left: 28px; display: inline-block">
+    <option value="30s">30s</option>
+    <option value="1min">1min</option>
+    <option value="1min30s">1min30s</option>
+    <option value="2min">2min</option>
+    <option value="2min30s">2min30s</option>
+    <option value="3min">3min</option>
+    <option value="3min30s">3min</option>
+    <option value="4min">4min</option>
+    <option value="4min30s">4min30s</option>
+    <option value="5min">5min</option>
+    <option value="6min">6min</option>
+    <option value="7min">7min</option>
+    <option value="8min">8min</option>
+    <option value="9min">9min</option>
+    <option value="10min">10min</option>
+    <option value="11min">11min</option>
+    <option value="12min">12min</option>
+    <option value="13min">13min</option>
+    <option value="14min">14min</option>
+    <option value="15min">15min</option>
+    <option value="20min">20min</option>
+    <option value="25min">25min</option>
+    <option value="30min">30min</option>
+    <option value="35min">35min</option>
+    <option value="40min">40min</option>
+  </select>
+  <button class="display-manually">></button>
+  <input placeholder="minutes" class="manually-timer manually-timer-minutes-js">
+  <input placeholder="seconds" class="manually-timer manually-timer-seconds-js">
+  <input placeholder="Name"class="name-timer">
+  <button class="add-timer">Add</button>
+ </div>
+
+<div class="red-background">_</div>
+
+<div class="timers-div">
+  
+  <div class="first-timer">
+    <div class="buttons-container">
+      <button class="pause-timer"></button>
+      <button class="restart-timer">
+          <img class="restart-image" src="Restart for Timer.png">
+      </button> 
+      <button class="delete-timer">Delete</button>
+    </div>
+    
+    <div class="countdown-and-name">
+      <p class="countdown">00:00</p>
+      <div class="div-name-displayed">
+        <button class="name-timer-displayed">unnamed timer</button>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="two-timers"></div>
+  <div class="three-timers"></div>
+  <div class="four-timers"></div>
+</div>  
+</div>
+
+ 
+<script src="Timer project.js"></script>
+</body>

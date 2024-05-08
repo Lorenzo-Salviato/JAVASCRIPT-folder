@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+p {
+  width: 1000px
+}
+
+body {
+  width: 200 px;
+  font-family: arial;
+  padding: 20px 0px 20px 20px;
+}
+.erreur{
+  color: red; 
+  text-decoration: wavy red;
+}
+
+.grid{
+  display: grid;
+  align-items: center;
+  grid-template-columns: 169px 200px;
+  margin-top: 50px;
+  column-gap: 15px;
+}
+
+.bouton {
+  background-color: blue;
+  color: greenyellow; 
+  font-weight: bold;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  border-left: 1.5px solid black;
+  border-top: 1.5px solid black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.bouton:active .grid {
+  column-gap: 16px;
+}
+
+.bouton:active {
+  box-shadow: none;
+
+}
+
+.back-to-main{
+  font-weight: bold;
+  font-size: 23px; 
+  color: rgb(160, 13, 13); 
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+</style>
+<title>Trouver les diviseurs</title>
+
+
+</head>
+<body>
+<a href="JAVASCRIPT course1.html"><button class="back-to-main">Back</button></a>
+<br><br>
+<div class="grid">
+  <input class="input" placeholder="Entrer un nombre" onkeydown="if(event.key === 'Enter') {fonctionDiviseurs()}">
+<button class="bouton" onclick="fonctionDiviseurs()">Trouver diviseurs
+</button>
+</div>
+<p class="résultat"></p>
+
+
+
+</body>
+<script>
+console.log('hey')
+
+
+ 
+
+function fonctionDiviseurs(){
+  const nombre = parseFloat(document.querySelector('.input').value); 
+  let resultat = document.querySelector('.résultat'); 
+  let diviseurs =[];
+
+  for(i = 1; i <= nombre; i++){
+    if(nombre % i === 0){
+      diviseurs.push(i)
+    }; 
+  }
+  resultat.innerHTML = `${nombre} est divisible par ${diviseurs}`; 
+  if (nombre !== Math.floor((nombre / 100) * 100)){
+    resultat.innerHTML = 'erreur: ce nombre est un nombre decimal'; 
+    resultat.classList.add('erreur');
+  } else {
+    resultat.classList.remove('erreur');
+  }
+}
+
+[
+  'todo',
+  'other task'
+].forEach(function(value) {
+  console.log(value);
+})
+
+
+</script>
+</body>
+
+</html>

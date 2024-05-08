@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="JAVASCRIPT course.css">
+<title>Javascript course !</title>
+
+
+</head>
+<body>
+  <button class="date-displayed"></button>
+
+  <a href="diviseurs.html"><button class="go-to-diviseurs">Diviseurs</button></a>
+  <br>
+<div style="display: inline-block"> <p><strong><u>EXERCISE VARIABLES</u></strong></p>
+<button onclick="console.log(`Cart Quantity : ${cartQuantity}`)">Show quantity</button>
+<button onclick="if (cartQuantity > 9){alert('The cart is full')} else {cartQuantity ++}">Add to cart</button>
+<button onclick="if (cartQuantity > 8){alert('The cart is full')} else {cartQuantity += 2}">+2</button>
+<button onclick="if (cartQuantity > 7){alert('The cart is full')} else {cartQuantity += 3}">+3</button>
+<button onclick="if (cartQuantity > 6){alert('The cart is full')} else {cartQuantity += 4}">+4</button>
+<button onclick="if (cartQuantity > 7){alert('The cart is full')} else {cartQuantity += 5}">+5</button>
+<button onclick="cartQuantity = 0; console.log('Cart was reset');">Reset cart</button>
+<button onclick="cartQuantity --">Remove from cart</button>
+<br><br><br><br>
+</div>
+
+<div style="display: inline-block"> 
+<p> <strong><u>code couleur :</u></strong> strings <button class="strings-couleur">.</button> ; variables, objects, arrays <button class="variables-couleur">.</button> ; numbers <button class="numbers-couleur">.</button> ; functions <button class="functions-couleur">.</button> ; result <button class="result-couleur">.</button> ; arrays' content <button class="arrays-content-couleur">.</button> ; loops <button class="loops-couleur">.</button> ; others <button class="other-couleur">.</button></p>
+</div>
+
+
+<p><strong><u>EXERCISE CALCULATOR</u></strong></p>   
+<div style="margin-bottom: 50px; display: inline-block; ">
+<p>
+<button onclick="addNumber('1'); lastNumber = '1'">1</button>
+<button onclick="addNumber('3'); lastNumber = '3'">3</button>
+<button onclick="addNumber('2'); lastNumber = '2'">2</button>
+<button class="calculator-operators" onclick="addNumber(' + '); lastNumber = ' + '">+</button>
+<button style="background-color: orange" onclick="Calculation = (Calculation - lastNumber) / 10; zeroAfterCancel ();">C</button>
+
+</p>
+<p>
+<button onclick="addNumber('4'); lastNumber = '4';">4</button>
+<button onclick="addNumber('5'); lastNumber = '5';">5</button>
+<button onclick="addNumber('6'); lastNumber = '6';">6</button>
+<button class="calculator-operators" onclick="addNumber(' - '); ; lastNumber = ' - ';">-</button>
+</p>
+<p>
+<button onclick="addNumber('7'); lastNumber = '7';">7</button>
+<button onclick="addNumber('8'); lastNumber = '8';">8</button>
+<button onclick="addNumber('9'); lastNumber = '9';">9</button>
+<button class="calculator-operators" onclick="addNumber(' * '); lastNumber = ' * ';">*</button>
+</p>
+<p>
+<button onclick="addNumber('0')">0</button>
+<button style="background-color: #26a7fc" onclick="addNumber('.'); lastNumber = '.';">.</button>
+<button style="background-color: yellow" onclick="console.log(eval(Calculation)); document.querySelector('.js-result-calculator').innerHTML = eval(Calculation); Calculation = '';">=</button>
+<button class="calculator-operators" onclick="addNumber(' / '); ; lastNumber = ' / ';">/</button>
+</p>
+<p><button style="background-color: orange" onclick="Calculation = ''; console.log('Cleared.'); localStorage.removeItem('CalculationStorage')">Clear</button>
+<button class="calculator-operators" onclick="addNumber(`(`); lastNumber = '(';">(</button>
+<button class="calculator-operators" onclick="addNumber(')'); lastNumber = ')';">)</button>
+</p>
+</div>
+<div class="result-calculator-div" ><p class="result-calculator-text" >RESULT :</p>
+<button class="js-result-calculator result-calculator-button" ></button>
+</div>
+
+<button class="js-button-subscribe button-subscribe"  onclick="
+subscribeButtonFunction()">Subscribe</button>
+
+<p style="display: block; ">Over $40: Free Shipping. Under $40: 10$ for shipping </p>
+
+<input class="shopping-free-shipping" placeholder="Cost of product" onkeydown="if (event.key === 'Enter') {amazonShippingFunction() }
+"><button class="calculate-button-shipping"  onclick="amazonShippingFunction()">Calculate</button>
+<p class="result-free-shipping" style="margin-bottom: 40px;"></p>
+
+<input class="name-submit" placeholder="Name" onkeydown="if (event.key === 'Enter') {nameFunction() }">
+<button style="margin-left: 14px;" onclick="nameFunction()">Submit</button>
+<p class="result-name"></p>
+
+<button class="js-button-only-one-on-1" onclick="buttonActivationFunction1()">ROOOOR</button> 
+<button class="js-button-only-one-on-2" onclick="buttonActivationFunction2()">RAAAAR</button>
+<button class="js-button-only-one-on-3" onclick="buttonActivationFunction3()">REEEER</button>
+
+
+
+
+<p><strong><u>EXERCISE TODO LIST </u></strong></p>   
+
+<input type="text" placeholder="Task name" class="input-Todo-List-1" 
+onkeydown="if (event.key === 'Enter') {TodoListFunction1(); document.querySelector('.input-Todo-List-1').value = ''}">
+
+<button class="Add-To-Do-List" onclick="TodoListFunction1(); document.querySelector('.input-Todo-List-1').value = ''">Add</button>
+
+<button onclick="funtionAccumulatorPattern()" style="background-color: purple; color: white; border: solid 2px Black; font-family: arial; display: block; padding: 8px 15px; font-weight: bold; margin-bottom: 45px; cursor: pointer;">Accumulator pattern</button>
+
+
+<input type="text" placeholder="Task name" class="input-Todo-List-2" 
+onkeydown="if (event.key === 'Enter') {TodoListFunction2(); document.querySelector('.input-Todo-List-2').value = ''}">
+
+<button class="Add-To-Do-List2" onclick="TodoListFunction2(); document.querySelector('.input-Todo-List-2').value = ''" >Add</button>
+
+<div class="todo-list-result"></div>
+
+<p style="margin-top: 30px"><strong><u>Exercise add one to each number of the array</u></strong></p>
+<button  onclick="addOne ([4, 7, 12])">4, 7, 12</button>
+<button  onclick="addOne ([67, 6, 9])">67, 6, 9</button>
+<button  onclick="addOne ([1, 11, 2006])">1, 11, 2006</button><br>
+
+<p style="margin-top: 30px"><strong><u>Exercise add the numbers of two arrays</u></strong></p>
+<button  style="font-family: arial" onclick="addArray ([4, 7, 12], [9, 18, 21] )">[4, 7, 12],   [9, 18, 21]</button>
+<button  style="font-family: arial" onclick="addArray([67, 6, 9], [3, 3, 23])">[67, 6, 9],   [3, 3, 23]</button>
+<button  style="font-family: arial" onclick="addArray([1, 11, 20], [2, 43, 8])">[1, 11, 20],   [2, 43, 8]</button>
+<br>
+
+<!-- 
+<div class="grid-diviseurs">
+  <input class="js-input-diviseurs" placeholder="Entrer un nombre">
+  <button class="trouver-diviseurs" onclick="fonctionDiviseurs()">Trouver diviseurs</button>
+</div>
+<p class="js-résultat-diviseurs"></p>
+-->
+
+
+<button class="finish-button"  >Finish</button>
+
+<p style="margin-top: 50px">This is what's in your grocery cart : pasta, ice cream, ham, egg, apple. What do you want to remove ?</p>
+<button class="pasta">Pasta</button>
+<button class="ice-cream">Ice cream</button>
+<button class="ham">Ham</button>
+<button class="Egg">Egg</button>
+<button class="Apple">Apple</button>
+
+<br>
+
+<select style="margin-top: 50px" id="select">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+</select>
+<button style="margin-left: 10px" class="select-add">Add</button>
+<p class="select-quantity" style="display: inline-block; margin-left: 10px">Quantity: </p>
+
+<p class="not-added-text">Added !</p>
+<button class="add-button-exercise">Add product</button>
+
+<div class="generate-HTML-div">
+  
+</div>
+
+<div class="quantity-container">
+
+<p class="quantity-update"></p>
+<p class="update-p"><span class="update-quantity">update</span>
+<input class="quantity-input">
+<span class="save-quantity-link">Save</span></p>
+
+</div>
+<div>
+
+  <select class="select-minutes-timer" style="margin-left: 28px; display: inline-block">
+  <option value="30s">30s</option>
+  <option value="1min">1min</option>
+  <option value="1min30s">1min30s</option>
+  <option value="2min">2min</option>
+  <option value="2min30s">2min30s</option>
+  <option value="3min">3min</option>
+  <option value="3min30s">3min</option>
+  <option value="4min">4min</option>
+  <option value="4min30s">4min30s</option>
+  <option value="5min">5min</option>
+  <option value="6min">6min</option>
+  <option value="7min">7min</option>
+  <option value="8min">8min</option>
+  <option value="9min">9min</option>
+  <option value="10min">10min</option>
+  <option value="11min">11min</option>
+  <option value="12min">12min</option>
+  <option value="13min">13min</option>
+  <option value="14min">14min</option>
+  <option value="15min">15min</option>
+  <option value="20min">20min</option>
+  <option value="25min">25min</option>
+  <option value="30min">30min</option>
+  <option value="35min">35min</option>
+  <option value="40min">40min</option>
+  </select>
+  <input placeholder="minutes" class="input-minutes-timer">
+  <input placeholder="seconds" class="input-seconds-timer">
+  <input placeholder="Name"class="name-timer">
+  <button class="add-timer">Add</button>
+  </div>
+
+<script type="text/javascript" src="JAVASCRIPT course.js"></script>
+<script src="JAVASCRIPT course.js"></script>
+</body>
+
+</html>
+
