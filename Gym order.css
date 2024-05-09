@@ -49,7 +49,7 @@ body{
         justify-content: center;
     }
     .all-workouts{
-        margin-bottom: 40px;
+        margin-bottom: 0px;
     }
 }
 @media(max-width:1107px){
