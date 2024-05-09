@@ -3,6 +3,20 @@ let workoutsList = JSON.parse(localStorage.getItem('workoutsList')) || ['Forearm
 const workoutDiv = document.querySelector('.workout-1-div')
 const secondWorkoutDiv = document.querySelector('.second-workout-div')
 
+function adjustZoom() {
+    var windowWidth = window.innerWidth;
+    var thresholdWidth = 700; 
+
+    if (windowWidth < thresholdWidth) {
+        var zoomScale = windowWidth / (thresholdWidth);
+        document.body.style.zoom = zoomScale;
+    } else {
+        document.body.style.zoom = 1;
+    }
+}
+adjustZoom();
+window.addEventListener('resize', adjustZoom);
+
 const workoutsGenerator = ()=>{
     secondWorkoutDiv.innerHTML = ''
     for(i = 0; i< workoutsList.length; i++){
