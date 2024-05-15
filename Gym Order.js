@@ -64,21 +64,6 @@ const editWorkoutGenerator = ()=> {
 editWorkoutGenerator()
 
 
-/*const changeWorkout1 = () => {
-    const newName = input1.value.trim(); // trim any whitespace
-    if (newName !== '') { 
-        workoutsList[0] = newName;
-        input1.value = '' // clear the input
-        input1.blur();
-        workoutsGenerator();
-        editWorkoutGenerator();
-    } else {
-        console.log('Please enter a valid workout name.');
-    }
-}
-*/
-
-
 const workoutChange = (num)=>{
     const input = document.querySelector(`.edit-input-${num}`)
     const newName = input.value.trim();
@@ -88,6 +73,12 @@ const workoutChange = (num)=>{
         input.blur();
         workoutsGenerator();
         editWorkoutGenerator();
+
+        const check = document.querySelector(`.edit-done-${num}`);
+        check.classList.add('checked');
+        setTimeout(() => {
+            check.classList.remove('checked')
+        }, 250);
     } else{
         console.log('ERROR')
     }
@@ -150,3 +141,23 @@ inputAdd.addEventListener('keydown', (event)=>{
         addWorkout()
     }
 })
+
+function trash(num){
+    //const trash = document.querySelector(`.trash-${num}`);
+    workoutsList.splice(num-1, num);
+    localStorage.setItem('WorkoutsList', JSON.stringify(workoutsList))
+    workoutsGenerator();
+    editWorkoutGenerator();
+
+    const numTotal = workoutsList.length + 1;
+    document.querySelector(`.edit-${numTotal}`).style.display = 'none'
+}
+
+document.querySelector('.trash-1').addEventListener('click', ()=> trash(1));
+document.querySelector('.trash-2').addEventListener('click', ()=> trash(2));
+document.querySelector('.trash-3').addEventListener('click', ()=> trash(3));
+document.querySelector('.trash-4').addEventListener('click', ()=> trash(4));
+document.querySelector('.trash-5').addEventListener('click', ()=> trash(5));
+document.querySelector('.trash-6').addEventListener('click', ()=> trash(6));
+document.querySelector('.trash-7').addEventListener('click', ()=> trash(7));
+document.querySelector('.trash-8').addEventListener('click', ()=> trash(8));
